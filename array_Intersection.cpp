@@ -7,7 +7,7 @@ both the arrays/lists contain a particular value or to put it in other words, wh
 is a common value that exists in both the arrays/lists.
 */
 
-// n*log(n) + O(m+n)
+// n*log(n) + m*log(m) + O(m+n)
 #include "sorting.h"
 
 void intersection(int *arr1, int *arr2, int n, int m) 
