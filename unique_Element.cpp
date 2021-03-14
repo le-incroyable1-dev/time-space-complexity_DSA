@@ -34,7 +34,7 @@ int findUnique(int ar[], int ar_size){
 // O ( n * log(n) )
 
 
-// APPROACH 3 : BEST
+// APPROACH 3 : EVEN BETTER
 
 // Use XOR operator throughout the array
 // The result at the end will be the unique element because a XOR a is 0
