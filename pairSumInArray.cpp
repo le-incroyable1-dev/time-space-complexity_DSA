@@ -38,7 +38,7 @@ Sample Output 1:
 7
 */
 
-// Here I wield one of the most powerful weapons i.e recursion OP
+// O(n^2) solution, by recursion. Can be done using iteration as well.
 
 int pairSum(int *arr, int n, int num)
 {
@@ -68,3 +68,7 @@ int pairSum(int *arr, int n, int num)
     
     return numOfPairs;
 }
+
+// O(n * log n) solution
+
+
