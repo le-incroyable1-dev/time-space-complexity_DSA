@@ -71,7 +71,7 @@ int pairSum(int *arr, int n, int num)
 
 --------------------------------------------------------------------------------------------------------------------------
 
-// O(n * log n) solution (incomplete)
+// O(n * log n) solution
 
 //MERGE ARRAYS CODE FROM GFG
 void mergeArrays(int arr1[], int arr2[], int n1, int n2, int arr3[])
@@ -180,11 +180,15 @@ int pairSum(int *arr, int n, int num)
             }
 
             
-            
             if(i == j && arr[i] == num1 && arr[i] == num2)
             {
                 c1 = c1 + c2 + 1;
                 numOfPairs += (c1*(c1-1))/2 ;
+            }
+            else if(i == j && arr[i] == num1 && arr[j] != num2)
+            {
+                c1++;
+                numOfPairs += c1 * c2;
             }
             else
                 numOfPairs += c1 * c2;
